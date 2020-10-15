@@ -1,0 +1,15 @@
+{
+    "require": {
+        "guzzlehttp/guzzle": "^7.0",
+        "vlucas/phpdotenv": "^5.2",
+        "twbs/bootstrap": "4.5.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8"
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "cp -R vendor/twbs/bootstrap/dist/* public/assets"
+        ]
+    }
+}
